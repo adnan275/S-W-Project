@@ -64,3 +64,106 @@ header nav a:hover {
     border-radius: 10px;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item h3 {
+    margin: 10px 0 5px;
+    font-family: "Prompt", sans-serif;
+
+}
+
+.gallery-item p {
+    font-size: 14px;
+    color: #bbb;
+    font-family: "Prompt", sans-serif;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: #2D2726;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Hepta Slab", serif;
+
+}
+
+.contact p {
+    margin-bottom: 20px;
+    color: #bbb;
+    font-family: "Prompt", sans-serif;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top: 0.5px solid #E6D8D633;
+    background-color: #E6D8D633;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e55d00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2D2726;
+    position: relative;
+    border-top: 1px solid #7b6d6a;
+}
+
+footer .subscribe {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2D2726;
+    border: 1px solid #7b6d6a;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer .subscribe:hover {
+    background-color: #e55d00;
+}
