@@ -1,9 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hepta+Slab:wght@1..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,15 +22,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 20px;
     background-color: #2D2726;
     border-bottom: 1px solid #776562;
 }
 
 header .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size:4.5vh;
+    font-weight: 500;
     font-family: "Prompt", sans-serif;
+    color: #E6D8D6;
 }
 
 header nav ul {
@@ -36,8 +41,9 @@ header nav ul {
 }
 
 header nav a {
-    color: #fff;
+    color: #E6D8D6;
     text-decoration: none;
+    font-size: 1.5vw;
     font-family: "Hepta Slab", serif;
 }
 
@@ -47,12 +53,16 @@ header nav a:hover {
 
 
 .hero {
+    
     text-align: center;
     padding: 50px 20px;
 }
 
 .hero h1 {
+    margin-top: 4.5vw;
+    padding-bottom: 2vw;
     font-size: 8vw;
+    line-height: 1;
     font-weight: 500;
     color: #E6D8D6;
     margin-bottom: 20px;
@@ -68,47 +78,54 @@ header nav a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 50px;
+    padding: 3vw;
 }
 
 .gallery-item {
-    text-align: center;
+    line-height:1.5;
 }
 
 .gallery-item img {
     max-width: 100%;
-    border-radius: 10px;
 }
 
 .gallery-item h3 {
-    margin: 10px 0 5px;
+    font-weight: 300;
+    font-size: 2.1vh;
+    color: #E6D8D6;
     font-family: "Prompt", sans-serif;
 
 }
 
 .gallery-item p {
     font-size: 14px;
-    color: #bbb;
+    color: #E6D8D69E;
     font-family: "Prompt", sans-serif;
 }
 
 .contact {
-    text-align: center;
     padding: 50px;
     background-color: #2D2726;
+    border-bottom:1px solid #776562;
+}
+.contactdiv{
+    text-align: center;
 }
 
 .contact h2 {
     font-size: 32px;
+    color: #E6D8D6;
     margin-bottom: 10px;
+    font-weight: 500;
     font-family: "Hepta Slab", serif;
 
 }
 
 .contact p {
-    margin-bottom: 20px;
-    color: #bbb;
-    font-family: "Prompt", sans-serif;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #E6D8D6;
+    font-family: "Fira Sans", serif;
 }
 
 .contact form {
@@ -126,42 +143,69 @@ header nav a:hover {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border-top: 0.5px solid #E6D8D633;
-    background-color: #E6D8D633;
+    border: 1.5px solid #E6D8D633;
+    background-color: #FFFFFF29;
     border-radius: 5px;
 }
 
 .contact button {
     padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
+    background-color: #F59C5C;
+    color: #0D0402;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 .contact button:hover {
-    background-color: #e55d00;
+    background-color: #e86e1d;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2D2726;
-    position: relative;
-    border-top: 1px solid #7b6d6a;
-}
+.footer {
+    background-color: #2D2726; 
+    padding: 30px; 
+    color: #E6D8D69E;
+    margin-top: 100px;
+    font-family: "Hepta Slab", serif;
+    font-size: 18px;
+  }
+  
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between; 
+    margin: 0 auto;
+    font-size: 28px;
+  }
 
-footer .subscribe {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #2D2726;
-    border: 1px solid #7b6d6a;
-    color: #fff;
-    cursor: pointer;
+  .subscribe-button {
+    background-color: transparent; 
+    border: 1.5px solid #B6A09133; 
     border-radius: 5px;
-}
-
-footer .subscribe:hover {
-    background-color: #e55d00;
-}
+    color: #E6D8D6;
+    padding: 9px 18px;
+    font-family: "Fira Sans", serif; 
+    font-size: 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #e86e1d; 
+    color: #1a1a1a;
+    font-weight: 500; 
+  }
+  
+  @media (max-width: 700px){
+    .subscribe-button{
+        font-size: 3vw;
+    }
+    .footer-content{
+        font-size: 4vw;
+    }
+    header nav a{
+        font-size: 2.5vw;
+    }
+  }

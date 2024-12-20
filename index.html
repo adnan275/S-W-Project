@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,20 @@
         <div class="logo">Logo</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="https://github.com/adnan275">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <h1>Explore My Adventures</h1>
             <img src="media/image1.png" alt="Beach Sunset">
         </section>
-        <section class="gallery">
+        <section id="Portfolio" class="gallery">
             <div class="gallery-item">
                 <img src="media/image2.png" alt="Paris">
                 <h3>Paris</h3>
@@ -72,9 +73,11 @@
             </div>
         </section>
 
-        <section class="contact">
-            <h2>Get in Touch</h2>
-            <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+        <section id="contact" class="contact">
+            <div class="contactdiv">
+                <h2>Get in Touch</h2>
+                <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+            </div>
             <form>
                 <div class="form-group">
                     <input type="text" placeholder="First name">
@@ -87,9 +90,12 @@
         </section>
     </main>
 
-    <footer>
-        <p>2023 Travel Portfolio</p>
-        <button class="subscribe">Subscribe</button>
-    </footer>
+    <footer class="footer">
+        <div class="footer-content">
+          <span>2023 Travel Portfolio</span>
+          <button class="subscribe-button">Subscribe</button>
+        </div>
+      </footer>
 </body>
+
 </html>
